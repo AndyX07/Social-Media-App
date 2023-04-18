@@ -11,3 +11,400 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-top: 83px;
+}
+
+.Login{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Login:before{
+  content: '';
+  background: url('./background/background.png') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.Login-container{
+  border-radius: 25px;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Login-container form{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Login-container form input{
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.Login-container form button{
+  width: 30%;
+  padding: 5px;
+  border-radius: 5px;
+  border-style:none;
+}
+
+.navbar{
+  top: 0px;
+  background-color: rgb(3, 186, 252);
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.navcontainer{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+li{
+  list-style:none;
+}
+
+.sidebar{
+  display: flex;
+  margin-left: 10px;
+  width: 190px;
+  height: 300px;;
+  padding-top: 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  top: 100px;
+  position: fixed;
+}
+
+.sidebarContainer{
+  width: 200px;
+  height: 300px;
+  margin-top: 10px;
+  padding-right: 40px;
+}
+
+.profile img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.sidebarContainer li{
+  list-style-type: none;
+  margin: 0 0;
+}
+
+.profile img{
+  cursor: pointer;
+}
+
+.profile img:hover{
+  opacity: 0.6;
+}
+
+.Post{
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.PostForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.PostForm button{
+  width: 50px;
+}
+
+.PostForm textarea{
+  resize: none;
+  border-radius: 20px;
+  border-style: none;
+  padding: 10px;
+}
+
+.PostForm button{
+  background-color:rgb(3, 186, 252);
+  border-radius: 5px;
+  border-style:none;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.PostForm button:hover{
+  cursor: pointer;
+}
+
+.Posts{
+  background-color: white;
+  padding: 50px;
+  border-radius: 30px;
+  margin: 50px;
+  padding-bottom: 10px;
+}
+
+.Posts img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.postContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.postContainer p{
+  margin-left: 30px;
+}
+
+.time{
+  margin-bottom: 30px;
+  color: grey;
+  font-size: 15px;
+}
+
+.actions{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.actions p{
+  margin-left: 10px;
+}
+
+.like{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.like:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.comment{
+  margin-left: 30px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.comment:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.delete{
+  margin-left: auto;
+}
+
+.comments{
+  display: flex;
+  flex-direction :column;
+  margin-left: 170px;
+  height: 100%;
+}
+
+.addComment{
+  display: flex;
+  flex-direction :column;
+  margin-left: 70px;
+  width: 70%;
+}
+
+.addComment img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.postForm{
+  border-radius: 50px;
+  border-style: none;
+  padding: 50px;
+  width: 100%;
+}
+
+.postForm textarea{
+  width: 70%;
+}
+
+textarea{
+  resize: none;
+}
+
+.postContainer img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.display{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border-radius: 50px;
+  border-style: none;
+  background-color: white;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.commentList{
+  margin-left: 100px;
+  width: 100%;
+}
+
+.delete button{
+  background: transparent;
+  border: none;
+  font-size:0;
+}
+
+.Profile{
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userPicture img{
+  margin-left: 300px;
+  margin-top: 30px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.userPicture p{
+  margin-left: 425px;
+}
+
+.userPicture button{
+  margin-left: 375px;
+}
+
+.userPosts{
+  width: 70%;
+}
+
+.upload{
+  margin-left: 300px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.upload input{
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.upload button{
+  width: 70px;
+}
+
+.sidebarContainer button{
+  background-color:rgb(3, 186, 252);
+  border-radius: 5px;
+  border-style:none;
+  padding: 5px;
+}
+
+.sidebarContainer button:hover{
+  cursor: pointer;
+}
+
+.logout{
+  margin-right: 10px;
+  background-color:rgb(224, 60, 45);
+  border-radius: 5px;
+  border-style:none;
+  padding: 5px;
+}
+
+.logout{
+  cursor: pointer;
+}
+
+.homeLink{
+  text-decoration: none;
+  color: black;
+}
+
+.homeLink:hover{
+  color: grey;
+}
+
+.commentButton{
+  margin-right: 10px;
+  background-color:rgb(3, 186, 252);
+  border-radius: 5px;
+  border-style:none;
+  padding: 5px;
+}
+
+.commentButton:hover{
+  cursor: pointer;
+}
+
+.navPicture img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+}
+
+.navPicture{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
