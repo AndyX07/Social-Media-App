@@ -6,9 +6,9 @@ Preview Site: https://andyjustchat.netlify.app
 
 Technologies Used:
 - React JS
+- Firebase
 - HTML
 - CSS
-- Firebase
 
 ![image](https://user-images.githubusercontent.com/128534708/232647515-a74c8e89-344a-42c6-b118-e8e4e7bc028a.png)
 
